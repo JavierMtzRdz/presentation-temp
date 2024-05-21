@@ -1,0 +1,38 @@
+bibliography: refs/refs.bib
+format: 
+  revealjs:
+    width: 1200
+    slide-number: c
+    background-image: frmt/normal-background-1.png
+    output-file: index.html
+    parallax-background-size: 100% 100%
+    background-size: 100% 100%
+    background-position: 100% 100%
+    background-repeat: no-repeat
+    fontsize: 2.5em
+    css: ["frmt/theme.css"]
+    html-math-method: mathjax
+    fig-format: svg
+    fig-align: center
+    fig-width: 4.5
+    fig-height: 8
+    scrollable: false
+    transition: none
+    link-external-icon: true
+    link-external-newwindow: true
+    background-transition: fade
+    code-overflow: wrap
+title-slide-attributes:
+    data-background-image: frmt/background.png
+    data-background-size: 100% 100%  
+    
+knitr:
+  opts_chunk:
+    comment: "#>"
+    message: FALSE
+    dev: "png"
+    fig.width: 4.5
+    fig.height: 8
+    fig.align: center
+    fig.path: "figs/"
+

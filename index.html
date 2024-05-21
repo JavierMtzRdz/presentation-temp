@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.4.549">
 
   <meta name="author" content="Javier Mtz.-Rdz.">
-  <title> P-values:</title>
+  <title>  Example: </title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -50,7 +50,7 @@
       margin-left: 2em;
     }  </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
-  <link rel="stylesheet" href="frmt/theme_jmr.css">
+  <link rel="stylesheet" href="frmt/theme.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -346,8 +346,8 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="frmt/background.png" data-background-size="100% 100%" class="quarto-title-block center">
-  <h1 class="title"><span style="color:#f10f10f10; font-size:100pt"><br>P-values:</span></h1>
-  <p class="subtitle"><span style="color:#f10f10f10; font-size:30pt">Altman, Douglas G., and J. Martin Bland. 1995. “Statistics Notes: Absence of Evidence Is Not Evidence of Absence.” BMJ 311 (7003): 485. <br><br> Baker, Monya. 2016. “Statisticians Issue Warning over Misuse of P Values.” Nature 531 (7593): 151–51. </span></p>
+  <h1 class="title"><span style="color:#f10f10f10; font-size:100pt"><br> Example: </span></h1>
+  <p class="subtitle"><span style="color:#f10f10f10; font-size:30pt"> Subtitle </span></p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -358,32 +358,7 @@
 </div>
 
 </section>
-
 <section id="what-is-a-p-value" class="slide level2">
-<h2>What is a p-value?</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<ul>
-<li><strong>Ronald Fisher</strong> introduced the p-value in the 1920s.</li>
-<li>He originally intended it to be an informal method of determining whether a particular observation was <strong>worth of a second look</strong>.</li>
-<li><strong>Idea:</strong> see if the results were consistent with what random chance might produce.</li>
-</ul>
-<div style="font-size:0.8em">
-<p><span class="citation" data-cites="Nuzzo:2014">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Nuzzo:2014?</strong></a>)</span></p>
-</div>
-</div><div class="column" style="width:40%;">
-<div style="font-size:0.8em">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Youngronaldfisher2.JPG" class="quarto-figure quarto-figure-center" width="350"></p>
-</figure>
-</div>
-<p><span class="citation" data-cites="iRF1:1913">(<a href="#/references" role="doc-biblioref" onclick=""><strong>iRF1:1913?</strong></a>)</span></p>
-</div>
-</div>
-</div>
-</section>
-<section id="what-is-a-p-value-1" class="slide level2">
 <h2>What is a p-value?</h2>
 <ul>
 <li><p><strong>Idea:</strong> see if the results were consistent with what random chance might produce.</p>
@@ -397,224 +372,17 @@
 <p>The <strong>p-value</strong> tells us the probability of observing our data, assuming that the null hypothesis is true.</p>
 </blockquote>
 </section>
-<section id="what-is-a-p-value-2" class="slide level2">
+<section id="what-is-a-p-value-1" class="slide level2">
 <h2>What is a p-value?</h2>
 <p>Suppose we have a <span style="color:#808080">sample</span> of size <span class="math inline">\(n\)</span>.</p>
 
-<img data-src="index_files/figure-revealjs/unnamed-chunk-2-1.png" class="quarto-figure quarto-figure-center r-stretch" width="768"></section>
+<img data-src="figs/unnamed-chunk-2-1.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 
-<section id="what-is-a-p-value-4" class="slide level2">
+<section id="what-is-a-p-value-3" class="slide level2">
 <h2>What is a p-value?</h2>
 <p>Based on that, we create our <span style="color:#808080">null model</span>.</p>
 
-<img data-src="index_files/figure-revealjs/unnamed-chunk-4-1.png" class="quarto-figure quarto-figure-center r-stretch" width="768"></section>
-<section id="what-is-a-p-value-5" class="slide level2">
-<h2>What is a p-value?</h2>
-<div style="text-align: center">
-<p><span style="color:#808080">Null model</span> | <span style="color:#FF483B">Significance level </span></p>
-</div>
-
-<img data-src="index_files/figure-revealjs/unnamed-chunk-5-1.png" class="quarto-figure quarto-figure-center r-stretch" width="768"></section>
-<section id="what-is-a-p-value-6" class="slide level2">
-<h2>What is a p-value?</h2>
-<div style="text-align: center">
-<p><span style="color:#808080">Null model</span> | <span style="color:#FF483B">Significance level </span> | <span style="color:#1E81A2">P-value</span></p>
-</div>
-
-<img data-src="index_files/figure-revealjs/unnamed-chunk-6-1.png" class="quarto-figure quarto-figure-center r-stretch" width="768"></section>
-<section id="what-is-a-p-value-7" class="slide level2">
-<h2>What is a p-value?</h2>
-<div style="text-align: center">
-<p><span style="color:#808080">Null model</span> | <span style="color:#FF483B">Significance level </span> | <span style="color:#1E81A2">P-value</span></p>
-</div>
-
-<img data-src="index_files/figure-revealjs/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center r-stretch" width="768"></section>
-<section id="what-is-a-p-value-8" class="slide level2">
-<h2>What is a p-value?</h2>
-<p>When we increase the <span class="math inline">\(n\)</span>, the null model distribution becomes narrower.</p>
-
-<img data-src="index_files/figure-revealjs/unnamed-chunk-8-1.png" class="quarto-figure quarto-figure-center r-stretch" width="768"></section>
-<section id="what-is-a-p-value-9" class="slide level2">
-<h2>What is a p-value?</h2>
-
-<img data-src="02_figs/p_values_2x.png" class="quarto-figure quarto-figure-center r-stretch" width="400"><div class="{.absolutestyle='font-size:0.8em'}">
-<p><span class="citation" data-cites="P:2024">(<a href="#/references" role="doc-biblioref" onclick=""><strong>P:2024?</strong></a>)</span></p>
-</div>
-</section>
-<section id="the-fallacy-of-statistical-significance" class="slide level2">
-<h2>The Fallacy of Statistical Significance</h2>
-<ul>
-<li><p>The p-value was <strong>never meant to be used the way</strong> it is used today <span class="citation" data-cites="Nuzzo:2014">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Nuzzo:2014?</strong></a>)</span>.</p></li>
-<li><p>P-values alone <strong>cannot determine the truth or importance</strong> of research findings <span class="citation" data-cites="Baker:2016">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Baker:2016?</strong></a>)</span>.</p>
-<ul>
-<li>Just by chance, many conclusions will be wrong.</li>
-</ul></li>
-</ul>
-</section>
-<section id="the-fallacy-of-statistical-significance-1" class="slide level2">
-<h2>The Fallacy of Statistical Significance</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="02_figs/significant-section-1.png" class="quarto-figure quarto-figure-center" width="500"></p>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="02_figs/significant-section.png" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-<div style="font-size:0.8em">
-<p><span class="citation" data-cites="S:2024">(<a href="#/references" role="doc-biblioref" onclick=""><strong>S:2024?</strong></a>)</span></p>
-</div>
-</div>
-</div>
-</section>
-<section id="the-fallacy-of-statistical-significance-2" class="slide level2">
-<h2>The Fallacy of Statistical Significance</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="02_figs/chocolate-1.jpg" class="quarto-figure quarto-figure-center" width="500"></p>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="02_figs/chocolate-2.png" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-<div style="font-size:0.8em">
-<p><span class="citation" data-cites="Bohannon:2015">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Bohannon:2015?</strong></a>)</span></p>
-</div>
-</div>
-</div>
-</section>
-<section id="the-fallacy-of-statistical-significance-3" class="slide level2">
-<h2>The Fallacy of Statistical Significance</h2>
-<ul>
-<li><p>The p-value was <strong>never meant to be used the way</strong> it is used today <span class="citation" data-cites="Nuzzo:2014">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Nuzzo:2014?</strong></a>)</span>.</p></li>
-<li><p>P-values alone <strong>cannot determine the truth or importance</strong> of research findings <span class="citation" data-cites="Baker:2016">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Baker:2016?</strong></a>)</span>.</p>
-<ul>
-<li>Just by chance, many conclusions will be wrong.</li>
-<li><strong>P-hacking</strong> (also data dredging or data snooping). It is trying multiple things until you get the desired p-value.</li>
-</ul></li>
-</ul>
-</section>
-<section id="the-fallacy-of-statistical-significance-4" class="slide level2">
-<h2>The Fallacy of Statistical Significance</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="02_figs/p-hackin-1.png" class="quarto-figure quarto-figure-center" width="500"></p>
-</figure>
-</div>
-<div style="font-size:0.8em">
-<p><span class="citation" data-cites="StefanSchonbrodt:2023">(<a href="#/references" role="doc-biblioref" onclick=""><strong>StefanSchonbrodt:2023?</strong></a>)</span></p>
-</div>
-</div><div class="column" style="width:60%;">
-<p align="center">
-<iframe width="600" height="500" src="https://projects.fivethirtyeight.com/p-hacking/index.html" sandbox="allow-forms allow-scripts">
-</iframe>
-</p>
-<div style="font-size:0.8em">
-<p><span class="citation" data-cites="Aschwanden:2015">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Aschwanden:2015?</strong></a>)</span></p>
-</div>
-</div>
-</div>
-</section>
-<section id="the-fallacy-of-statistical-significance-5" class="slide level2">
-<h2>The Fallacy of Statistical Significance</h2>
-<ul>
-<li><p>The p-value was <strong>never meant to be used the way</strong> it is used today <span class="citation" data-cites="Nuzzo:2014">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Nuzzo:2014?</strong></a>)</span>.</p></li>
-<li><p>P-values alone <strong>cannot determine the truth or importance</strong> of research findings <span class="citation" data-cites="Baker:2016">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Baker:2016?</strong></a>)</span>.</p>
-<ul>
-<li>Just by chance, many conclusions will be wrong.</li>
-<li><strong>P-hacking</strong>. It is trying multiple things until you get the desired p-value.</li>
-</ul></li>
-<li><p>Tendency to deflect attention from the actual <strong>size of an effect</strong> <span class="citation" data-cites="Nuzzo:2014">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Nuzzo:2014?</strong></a>)</span>.</p></li>
-</ul>
-</section>
-<section id="the-fallacy-of-statistical-significance-6" class="slide level2">
-<h2>The Fallacy of Statistical Significance</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="02_figs/small-diff-1.png" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-<div style="font-size:0.8em">
-<p><span class="citation" data-cites="CacioppoCacioppoGonzaga:2013">(<a href="#/references" role="doc-biblioref" onclick=""><strong>CacioppoCacioppoGonzaga:2013?</strong></a>)</span></p>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="02_figs/small-diff.png" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-<p>On a 1-to-7 scale at 5.6, versus 5.5 for those who met offline.</p>
-<div style="font-size:0.8em">
-<p><span class="citation" data-cites="Nuzzo:2013">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Nuzzo:2013?</strong></a>)</span></p>
-</div>
-</div>
-</div>
-</section>
-<section id="reporting-non-significant-findings" class="slide level2">
-<h2>Reporting non-significant findings</h2>
-<ul>
-<li><strong>“Absence of evidence is not evidence of absence”</strong> <span class="citation" data-cites="AltmanBland:1995">(<a href="#/references" role="doc-biblioref" onclick=""><strong>AltmanBland:1995?</strong></a>)</span>.
-<ul>
-<li>The lack of statistical significance of most of the individual trials led to a <strong>long delay</strong> before the true value is found.</li>
-<li>The <strong>sample size</strong> of controlled trials is generally inadequate, with a consequent lack of power to detect real, and clinically worthwhile, differences in treatment.</li>
-</ul></li>
-</ul>
-</section>
-<section id="reporting-non-significant-findings-1" class="slide level2">
-<h2>Reporting non-significant findings</h2>
-
-<img data-src="index_files/figure-revealjs/unnamed-chunk-9-1.png" class="quarto-figure quarto-figure-center r-stretch" width="768"></section>
-<section id="how-big-is-the-problem" class="slide level2">
-<h2>How big is the problem?</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-<ul>
-<li>Beside the problems, it is <strong>one of the most influential metrics to determine whether a result is published</strong> in a scientific journal.</li>
-</ul>
-</div><div class="column" style="width:65%;">
-<div style="text-align: center" width="300">
-<p>Z-values extracted from confidence intervals in Medline between 1976 and 2019</p>
-</div>
-<p><img data-src="02_figs/Z_plot.png" class="quarto-figure quarto-figure-center" width="650">.</p>
-<div style="font-size:0.8em">
-<p><span class="citation" data-cites="Barnett:2022">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Barnett:2022?</strong></a>)</span></p>
-</div>
-</div>
-</div>
-</section>
-<section id="how-big-is-the-problem-1" class="slide level2">
-<h2>How big is the problem?</h2>
-<p>False positive probability = 9 / (9 + 12) = 43%</p>
-
-<img data-src="https://raw.githubusercontent.com/agbarnett/talks/main/TRI/figures/pval_journey4.jpg" class="quarto-figure quarto-figure-center r-stretch"><div style="font-size:0.8em">
-<p><span class="citation" data-cites="Colquhoun:2014 Barnett:2022">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Colquhoun:2014?</strong></a>; <a href="#/references" role="doc-biblioref" onclick=""><strong>Barnett:2022?</strong></a>)</span></p>
-</div>
-</section>
-<section id="conclusion" class="slide level2" style="font-size:0.9em">
-<h2>Conclusion:</h2>
-<p><strong>Rethinking the Role of P Values</strong></p>
-<ul>
-<li><strong>Avoid</strong> making scientific conclusions or policy decisions <strong>based only on P-values</strong> <span class="citation" data-cites="Baker:2016">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Baker:2016?</strong></a>)</span>.</li>
-<li>You should <strong>weigh the evidence</strong> properly before drawing any conclusions (e.g.&nbsp;consider sample size).</li>
-<li>P-values alone <strong>are not enough</strong> to determine the truth or importance of research findings.</li>
-<li>It is crucial to ensure <strong>transparent reporting and rigorous analysis</strong> of scientific research.</li>
-<li>We should question whether the <strong>absence of evidence is a valid justification for inaction</strong> <span class="citation" data-cites="AltmanBland:1995">(<a href="#/references" role="doc-biblioref" onclick=""><strong>AltmanBland:1995?</strong></a>)</span>.</li>
-</ul>
-</section>
+<img data-src="figs/unnamed-chunk-4-1.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="section" class="slide level2" data-fullscreen="true" data-background-image="frmt/transition-1.png" data-background-size="100% 100%">
 <h2></h2>
 <p><br><br><br><br><br></p>
@@ -626,36 +394,11 @@
 </div>
 </div>
 </section>
-<section id="moving-towards-a-more-rigorous-approach" class="slide level2">
-<h2>Moving Towards a More Rigorous Approach</h2>
-<p>Some new approaches:</p>
-<ul>
-<li>Second generation p-values <span class="citation" data-cites="BlumeGreevyWelty:2019">(<a href="#/references" role="doc-biblioref" onclick=""><strong>BlumeGreevyWelty:2019?</strong></a>)</span>.</li>
-<li>Effect size + p-value <span class="citation" data-cites="GoodmanSpruillKomaroff:2019">(<a href="#/references" role="doc-biblioref" onclick=""><strong>GoodmanSpruillKomaroff:2019?</strong></a>)</span>.</li>
-<li>Change threshold, show odds <span class="citation" data-cites="BenjaminBerger:2019">(<a href="#/references" role="doc-biblioref" onclick=""><strong>BenjaminBerger:2019?</strong></a>)</span>.</li>
-<li>Confidence interval + false positive risk <span class="citation" data-cites="Colquhoun:2019">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Colquhoun:2019?</strong></a>)</span>.</li>
-<li>Confidence intervals + analysis of credibility <span class="citation" data-cites="Matthews:2019">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Matthews:2019?</strong></a>)</span>.</li>
-<li>Sample size dependent significance levels <span class="citation" data-cites="Gannonde_Braganca_PereiraPolpo:2019">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Gannonde_Braganca_PereiraPolpo:2019?</strong></a>)</span>.</li>
-<li>Practical benefit <span class="citation" data-cites="Pogrow:2019">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Pogrow:2019?</strong></a>)</span>.</li>
-</ul>
-</section>
 <section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
 <div id="refs" role="list">
 
 </div>
-</section>
-<section id="rethinking-the-role-of-p-values" class="slide level2" style="font-size:0.9em">
-<h2>Rethinking the Role of P Values</h2>
-<p>A little of context:</p>
-<ul>
-<li>[Early 1900’s ] Neyman vs.&nbsp;Fisher.</li>
-<li>[1995] <span class="citation" data-cites="AltmanBland:1995">(<a href="#/references" role="doc-biblioref" onclick=""><strong>AltmanBland:1995?</strong></a>)</span>’s critic to the evaluation of non-significant findings.</li>
-<li>[2014] <span class="citation" data-cites="Nuzzo:2014">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Nuzzo:2014?</strong></a>)</span>’s critic to the use of p-values and quantitative methodology.</li>
-<li>[2015] <span class="citation" data-cites="LeekPeng:2015">(<a href="#/references" role="doc-biblioref" onclick=""><strong>LeekPeng:2015?</strong></a>)</span>’s critic to the use of p-values and quantitative methodology.</li>
-<li>[2015] Ban of p-values by Basic and Applied Social Psychology (BASP).</li>
-<li>[2016] <em>The ASA’s Statement on p-Values</em> by <span class="citation" data-cites="WassersteinLazar:2016">(<a href="#/references" role="doc-biblioref" onclick=""><strong>WassersteinLazar:2016?</strong></a>)</span>.</li>
-</ul>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
@@ -852,7 +595,7 @@
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -992,6 +735,26 @@
         // clear code selection
         e.clearSelection();
       });
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+              // target, if specified
+              link.setAttribute("target", "_blank");
+              if (link.getAttribute("rel") === null) {
+                link.setAttribute("rel", "noopener");
+              }
+              // default icon
+              link.classList.add("external");
+          }
+        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
