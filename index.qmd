@@ -18,9 +18,9 @@ pacman::p_load(tidyverse, janitor, writexl,
 
 ## Set theme ------
 theme_set(theme_jmr(text = element_text(family = "Lato",
-                                        size=20),
+                                        size=25),
                     panel.grid = element_blank(),
-                    plot.title = formt_text(size = 23)))
+                    plot.title = formt_text(size = 35)))
 
 options(ggplot2.discrete.colour = c("#1E81A2", "#FF483B", "#039176", "#FFAC41"),
         ggplot2.discrete.fill = c("#1E81A2", "#FF483B", "#039176", "#FFAC41"))
@@ -47,10 +47,7 @@ options(scipen = 999)
 
 Suppose we have a <span style='color:#808080'>sample</span> of size $n$.
 
-```{r, dev.args=list(bg="transparent")}
-#| fig-height: 4.5
-#| fig-width: 8
-#| fig-align: "center"
+```{r}
 
 test_statistic <- 0.95
 mu1 <- qnorm(test_statistic)
@@ -85,11 +82,7 @@ dist_df = tibble(
 
 Based on that, we create our <span style='color:#808080'>null model</span>.
 
-```{r, dev.args=list(bg="transparent")}
-#| fig-height: 4.5
-#| fig-width: 8
-#| fig-align: "center"
-#| dev: "png"
+```{r}
 
 q <- map_dbl(c(0.05, 0.025, 0.975, 0.95), qnorm)
 z <- tibble(Z = seq(-4, 4, 0.01), density = dnorm(Z)*2.3)
@@ -121,11 +114,7 @@ z <- tibble(Z = seq(-4, 4, 0.01), density = dnorm(Z)*2.3)
 
 Based on that, we create our <span style='color:#808080'>null model</span>.
 
-```{r, dev.args=list(bg="transparent")}
-#| fig-height: 4.5
-#| fig-width: 8
-#| fig-align: "center"
-#| dev: "png"
+```{r}
 
 q <- map_dbl(c(0.05, 0.025, 0.975, 0.95), qnorm)
 z <- tibble(Z = seq(-4, 4, 0.01), density = dnorm(Z))
