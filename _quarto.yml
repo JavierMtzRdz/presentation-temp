@@ -16,6 +16,7 @@ format:
     fig-align: center
     fig-width: 4.5
     fig-height: 8
+    fig-dpi: 500
     scrollable: false
     transition: none
     link-external-icon: true
