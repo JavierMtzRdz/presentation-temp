@@ -39,4 +39,5 @@ knitr:
     dev.args:
       bg: "transparent" # plot backgrounds
 
-
+editor_options: 
+  chunk_output_type: console
