@@ -11,7 +11,7 @@ format:
     background-repeat: no-repeat
     fontsize: 2.8em
     css: ["frmt/theme.css"]
-    html-math-method: mathjax
+    self-contained-math: true
     fig-format: svg
     fig-align: center
     fig-width: 8
@@ -38,6 +38,10 @@ knitr:
     fig.path: "figs/"
     dev.args:
       bg: "transparent" # plot backgrounds
+      
+website:
+  favicon: https://raw.githubusercontent.com/JavierMtzRdz/JavierMtzRdz.github.io/main/assets/img/logo.ico # Correct for other projects
+  image: https://raw.githubusercontent.com/JavierMtzRdz/JavierMtzRdz.github.io/main/assets/img/logo.png
 
 editor_options: 
   chunk_output_type: console
