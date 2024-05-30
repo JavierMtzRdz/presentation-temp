@@ -39,9 +39,9 @@ knitr:
     dev.args:
       bg: "transparent" # plot backgrounds
       
-website:
-  favicon: figs/logo.ico
-  image: figs/logo.png
+include-in-header: # Correct when needed
+  - text: |
+     <link rel = "shortcut icon" href = "https://raw.githubusercontent.com/JavierMtzRdz/JavierMtzRdz.github.io/gh-pages/assets/img/logo.ico" /> 
 
 editor_options: 
   chunk_output_type: console
