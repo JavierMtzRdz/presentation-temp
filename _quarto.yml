@@ -40,8 +40,8 @@ knitr:
       bg: "transparent" # plot backgrounds
       
 website:
-  favicon: https://raw.githubusercontent.com/JavierMtzRdz/JavierMtzRdz.github.io/main/assets/img/logo.ico # Correct for other projects
-  image: https://raw.githubusercontent.com/JavierMtzRdz/JavierMtzRdz.github.io/main/assets/img/logo.png
+  favicon: figs/logo.ico
+  image: figs/logo.png
 
 editor_options: 
   chunk_output_type: console
