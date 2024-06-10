@@ -289,5 +289,4 @@ TSWLatexianTemp*
 # User-specific files
 .Ruserdata
 .Rproj.user
-
-/.quarto/
+.Rprofile
