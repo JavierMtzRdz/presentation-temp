@@ -4,11 +4,11 @@ format:
     embed-resources: true 
     width: 1200
     slide-number: c
-    background-image: frmt/normal-background-1.png
-    parallax-background-size: 100% 100%
+    background-image: frmt/normal-background.png
     background-size: 100% 100%
     background-position: 100% 100%
     background-repeat: no-repeat
+    parallax-background-size: 100% 100%
     fontsize: 2.8em
     css: ["frmt/theme.css"]
     self-contained-math: true
@@ -23,9 +23,10 @@ format:
     link-external-newwindow: true
     background-transition: fade
     code-overflow: wrap
-title-slide-attributes:
-    data-background-image: frmt/background.png
-    data-background-size: 100% 100%  
+    logo: frmt/logo-jmr-s.png
+    title-slide-attributes:
+      data-background-image: frmt/title.png
+      data-background-size: 100% 100%  
     
 knitr:
   opts_chunk:

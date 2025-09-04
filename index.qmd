@@ -1,11 +1,11 @@
 ---
-title: "<span style='color:#f10f10f10; font-size:100pt'><br>
+title: "<span style='color:#F2F2F2; font-size:100pt'><br>
 Example:
 </span>"
-subtitle: "<span style='color:#f10f10f10; font-size:30pt'>
+subtitle: "<span style='color:#DBDBDB; font-size:30pt'>
 Subtitle
  </span>"
-author: "<span style='color:#f10f10f10; font-size:30pt'>Javier Mtz.-Rdz.</span>"
+author: "<span style='color:#DBDBDB; font-size:30pt'>Javier Mtz.-Rdz.</span>"
 ---
 
 ```{r}
@@ -34,6 +34,8 @@ set_mytheme(text = element_text(family = "Lato",
     1.  Set up a 'null hypothesis' ($H_0$) that they wanted to disprove.
     2.  Assuming that this null hypothesis was in fact true.
     3.  Calculate the chances of getting results at least as extreme as what was actually observed.
+
+## What is a p-value?
 
 > The **p-value** tells us the probability of observing our data, assuming that the null hypothesis is true.
 
@@ -134,11 +136,11 @@ z <- tibble(Z = seq(-4, 4, 0.01), density = dnorm(Z))
 
 
 
-## {fullscreen="true" background-image="frmt/transition-1.png" background-size="100% 100%"}
+## {fullscreen="true" background-image="frmt/transition.png" background-size="100% 100%"}
 
 <br><br><br><br><br>
 
-::: {style='color:#EFF5F5;font-size:5em;text-align:left;vertical-align:middle' layout="[[1], [-1]]"}
+::: {style='color:#F2F2F2;font-size:5em;text-align:left;vertical-align:middle' layout="[[1], [-1]]"}
 Thanks!
 :::
 
