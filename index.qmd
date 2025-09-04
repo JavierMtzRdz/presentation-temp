@@ -8,28 +8,22 @@ Subtitle
 author: "<span style='color:#f10f10f10; font-size:30pt'>Javier Mtz.-Rdz.</span>"
 ---
 
-```{r message=FALSE, warning=FALSE, include=FALSE}
-# Setup ----
-## Packages to use ----
-pacman::p_load(tidyverse, janitor, writexl, 
-              readxl, scales, mytidyfunctions, 
-              presupuestoR, ggdist, 
-              distributional)
+```{r}
+#| message: false
+#| warning: false
+#| include: false
+#' To install mytidyfunctions
+if (!require("pacman")) install.packages("pacman")
+if (!require("mytidyfunctions")) remotes::install_github("JavierMtzRdz/mytidyfunctions")
+pacman::p_load(tidyverse, janitor, scales,
+               mytidyfunctions, here, extrafont,
+               distributional, ggdist)
 
-## Set theme ------
-theme_set(theme_jmr(text = element_text(family = "Lato",
+## Set theme and options ------
+set_mytheme(text = element_text(family = "Lato",
                                         size=25),
                     panel.grid = element_blank(),
-                    plot.title = formt_text(size = 35)))
-
-options(ggplot2.discrete.colour = c("#1E81A2", "#FF483B", "#039176", "#FFAC41"),
-        ggplot2.discrete.fill = c("#1E81A2", "#FF483B", "#039176", "#FFAC41"))
-
-## Specify locale ----
-Sys.setlocale("LC_ALL", "es_ES.UTF-8")
-
-## Disable scientific notation ----
-options(scipen = 999)
+                    plot.title = formt_text(size = 35))
 ```
 
 
